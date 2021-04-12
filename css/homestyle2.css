@@ -1,0 +1,166 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+html, body{
+	font-family: 'Ariral', sans-serif;
+	background-image: url("https://wallpapers777.com/wallpapers/big/background_iagody_listia_vetki_1352691_pic_image_wallpaper_big_1920x1080.jpg");
+	height: 100%;
+}
+
+nav{
+	background-color: #0008;
+	height: 100px;
+	width: 100%;
+	color: #fff;
+}
+
+#controlAll{
+	position: fixed;
+}
+
+nav ul{
+	background-color: #0008;
+	text-align: center;
+	position: fixed;
+	top: -100%;
+	width: 100%;
+	height: 100vh;
+	transition: all .5s;
+}
+
+nav ul li{
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+	padding: 10px;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+
+}
+
+nav ul li a{
+	color: #fff;
+}
+
+a:hover{
+	color: #e39d00;
+}
+
+.logo img{
+	position: absolute;
+	width: 30%;
+	line-height: 100px;
+}
+
+.checkbtn{
+	font-size: 30px;
+	float: right;
+	line-height: 100px;
+	margin-right: 40px;
+}
+
+#check{
+	display: none;
+}
+
+#check:checked ~ ul{
+	top: 100px;
+}
+
+
+
+.mainContent{
+	min-height: 100%;
+	color: #fff;
+	width: 80%;
+	padding: 20px;
+	text-align: left;
+	margin-left: 45px;
+}
+
+.mainContent ul li{
+	background-color: #0009;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.mainContent img{
+		border: 1px solid #fff;
+		width: 100%;
+	}
+
+
+.footerContent{
+	background-color: #002d79;
+	color: #fff;
+	height: 200px;
+}
+
+.footerContent ul li{
+	padding: 10px;
+}
+
+.footerBottom{
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+	color: #fff5;
+	background-color: #032a6b;
+}
+
+
+
+
+
+
+
+@media all and (min-width: 900px){
+	.checkbtn{
+		display: none;
+	}
+
+	.logo img{
+		width: 10%;
+		top: -22px;
+	}
+
+
+	nav ul{
+		float: right;
+		top: 0px;
+		left: 400px;
+		background: none;
+	}
+
+	nav ul li{
+		display: inline-block;
+		height: 90px;
+		transition: all 0.3s;
+	}
+
+	nav ul li:hover{
+		background-color: #e39d00;
+	}
+
+	a:hover{
+	color: #fff;
+	}
+
+	.mainContent{
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.mainContent ul li{
+		margin: 20px;
+		margin-left: 45px;
+		width: 20%;
+		display: inline-block;
+	}
+}

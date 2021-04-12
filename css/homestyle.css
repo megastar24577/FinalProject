@@ -1,0 +1,101 @@
+body{
+	font-family: 'Ariral', sans-serif;
+	background-image: url("https://wallpapers777.com/wallpapers/big/background_iagody_listia_vetki_1352691_pic_image_wallpaper_big_1920x1080.jpg");
+}
+
+nav{
+	background-color: #0008;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+}
+
+nav .mainMenu{
+	display: flex;
+	list-style: none;
+}
+
+nav .mainMenu li a{
+	display: inline-block;
+	padding: 15px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+nav .mainMenu li a:hover{
+	background-color: #e39d00;
+
+}
+
+nav img{
+	width: 25%;
+	margin: 15px;
+	cursor: pointer;
+}
+
+nav .openMenu{
+	font-size: 2rem;
+	margin: 20px;
+	display: none;
+	cursor: pointer;
+}
+
+nav .closeMenu, .mainMenu, .icons i{
+	font-size: 2rem;
+	display: none;
+	cursor: pointer;
+}
+
+
+@media all and (max-width: 900px){
+	nav .mainMenu{
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 10;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: #0008;
+		transition: top 1s ease;
+		display: none;
+	}
+
+	nav .mainMenu .closeMenu{
+		display: block;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+
+	nav .openMenu{
+		display: block;
+	}
+
+	nav .mainMenu li a:hover{
+		background: none;
+		color: #e39d00;
+		font-size: 1.6rem;
+	}
+
+	.icons i {
+		display: inline-block;
+		padding: 12px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+	
